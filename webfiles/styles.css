@@ -1,0 +1,384 @@
+html
+{
+    background-color : white;
+    color: black;
+    font-family: arial, verdana, ms sans serif;
+    font-weight: medium;
+    font-size: 13pt;
+
+}
+
+/* Note that 'color' means text color
+ * Scheme 1
+ * color 1: #D6AB73
+ * color 2: #D6CBBD
+ * color 3: #77839B
+ * dark blu: #232933
+ * grey: #473D31
+ *
+ * Scheme 2
+ * light green: BFD3B0
+ * med green: 688C4E
+ * dark green: 344627
+ * dark purple: 3C2131
+ *
+ * */
+
+
+input
+{
+    background-color: #BFD3B0;
+    border-color: #748657;
+    border-width: 1px;
+    font-family: arial, verdana, ms sans serif;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #232933;
+
+}
+
+input:focus
+{
+    background-color : #688C4E;
+    color: #EEFF55;
+}
+
+input:hover
+{
+    background-color : #789C7E;
+}
+
+
+
+
+/*
+ * Note the options I know for sub-classing an input button are:
+ * active, hover, and focus
+ *
+*/
+
+
+/* It seems that select doesn't really do anything... ?? Why not?
+ * woops-- it does make a difference in Firefox! */
+select
+{
+    background-color : #BFD3B0;
+    color: #232933;
+}
+
+select:focus
+{
+    background-color : #688C4E;
+    color: #232933;
+}
+
+select:active
+{
+    background-color : #688C4E;
+    color: #232933;
+}
+
+select:hover
+{
+    background-color : #688C4E;
+    color: #232933;
+}
+
+
+
+
+option
+{
+    background-color : white;
+}
+
+h1 {
+    font-family : Arial, Blasphemy,
+            Comic Sans MS,
+            Arial
+            ;
+    font-size: 0.40in;
+    text-align : center;
+}
+
+h2 {
+    font-family : Arial, Blasphemy,
+            Comic Sans MS,
+            Arial
+            ;
+    font-size: 0.3in;
+    text-align : center;
+    padding-botton: 0in;
+}
+h3 {
+    font-family : Arial, Blasphemy,
+            Comic Sans MS,
+            Arial
+            ;
+    font-size: 0.15in;
+    text-align : center;
+}
+
+tr { padding: 0px;}
+table { padding: 0px;}
+/*
+td {
+    padding : 15px;
+}
+*/
+/* Uncomment these two to show the borders on everything */
+
+table {
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: black;
+}
+
+td {
+    border-style: solid;
+    border-width: 0px;
+    border-color: green;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px
+    font-family : Arial, Blasphemy,
+    Comic Sans MS, Arial;
+    font-size: 0.15in;
+    text-align : left;
+}
+
+td.description
+{
+    font-size : 0.2in;
+}
+.body_text
+{
+    font-family : arial;
+    font-size : 0.18in;
+    font-weight : normal;
+    font-style : normal;
+    color : #000000;
+    text-align: justify;
+}
+
+.body_text a:link
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+.page {
+    background-color : #d6c2a9;
+    background-image : none;
+    margin : 0px 0px 0px 0px;
+     }
+.header
+{
+    background-color : #d6c2a9;
+    background-image : none;
+    padding : 0px;
+}
+
+.header td
+{
+    font-family : arial;
+    font-size : 8pt;
+    color : #000000;
+    font-weight : normal;
+    font-style : normal;
+}
+
+.header a:link
+{
+    text-decoration : none;
+    color : #000000;
+}
+
+.sidebar
+{
+    background-color: #d6c2a9;
+    padding: 10px;
+}
+
+.sidebar_space
+{
+    height : 10px;
+}
+
+.item
+{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #bfa380;
+    background-color : #d6c2a9;
+}
+
+.item_title
+{
+    background-color: #bfa380;
+    font-family: arial;
+    font-size: 9pt;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    padding: 3px;
+}
+
+.item_content
+{
+    color : #000000;
+    font-family : arial;
+    font-size : 8pt;
+    font-weight : normal;
+    font-style : normal;
+    padding: 5px;
+}
+
+.item_caption
+{
+    color : #000000;
+    font-family : arial;
+    font-size : 8pt;
+    font-weight : normal;
+    font-style : normal;
+    padding: 5px;
+}
+
+.sidebar a:link
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.body
+{
+    background-color : #d6c2a9;
+    background-image : none;
+    padding: 10px;
+}
+
+
+
+.footer
+{
+    background-color : #;
+    background-image : none;
+}
+
+.footer td
+{
+    font-family : arial;
+    font-size : 8pt;
+    color : #000000;
+    font-style : normal;
+    font-weight : normal;
+    padding : 0px;
+}
+
+.footer a:link
+{
+    text-decoration : none;
+    color : #000000;
+}
+
+.footer a:hover
+{
+    text-decoration : none;
+    color : #000000;
+}
+
+.footer a:visited
+{
+    text-decoration : none;
+    color : #000000;
+}
+
+.menu
+{
+    background-color: #d6c2a9;
+}
+
+.menuButton, .menuButton_on
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: hand;
+    height: 21px;
+}
+
+.menuButton a, .menuButton_on a
+{
+    font-family : arial;
+    font-size : 8pt;
+    font-weight : bold ;
+    color : #ffffff;
+    font-style : normal;
+    text-decoration: none;
+}
+
+.menuButton
+{
+    background-color: #bfa380;
+}
+
+.menuButton_on
+{
+    background-color: #8e0000;
+}
+
+.menudefault
+{
+    background-color: #bfa380;
+    width:25%;
+}
+
+.menuright
+{
+    background-color: #bfa380;
+    width:1px;
+}
+
+.menuright_on
+{
+    background-color: #8e0000;
+    width:1px;
+}
+
+.menuleft
+{
+    background-color: #bfa380;
+    width:1px;
+}
+
+.menuleft_on
+{
+    background-color: #8e0000;
+    width:1px;
+}
+
+.menu_ButtonHeight
+{
+    background-color: none;
+    width: 1px;
+    height: 21px;
+}
+
+.menu_h_space
+{
+    background-color: #ffffff;
+    height : 1px;
+}
+
+.header p {margin-top:0px; margin-bottom:0px}
+.sidebar p {margin-top:0px; margin-bottom:0px}
+.body p {margin-top:0px; margin-bottom:0px}
+.footer p {margin-top:0px; margin-bottom:0px}
+
