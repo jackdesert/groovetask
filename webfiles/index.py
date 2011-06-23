@@ -102,7 +102,9 @@ def application(environ, start_response):
 
     if(in_Lbutton == 'register'):
         userid = val_menu.create_user(in_username, in_password)
-        if(userid):
+        if(in_username == ''):
+            message = "<p style='color: blue;'>Enter your desired username and password, then click <i>Register</i> again.</p>"
+        elif(userid):
             message = """Thank you for creating an account with us. Please
                     enjoy GrooveTask.com<br>"""
             cookies = [('Set-Cookie', 'username_cookie = ' + in_username),

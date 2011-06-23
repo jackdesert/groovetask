@@ -144,15 +144,12 @@ def display_done_button(in_key_string):
 def display_login(in_message):
     assert(type(in_message) == type('some_string'))  # type is string
     bit = "<div align='center'><form method='post' >\n"
-    bit += "<h1>Welcome to GrooveTask.com!</h1>"
+    bit += "<h1>Welcome to GrooveTask</h1>"
     bit += "<h3>" + in_message + "</h3><br>\n"
-    bit += "Please enter your username and password below.<br>\n"
-    bit += "Then click the appropriate button to either login or "
-    bit += "to register for an account. <br>Enjoy!\n"
-    bit += "<table><tr><td>Username:<input type = 'text' name = 'username'><br>\n"
-    bit += "Password:<input type = 'password' name = 'password'</td>\n"
-    bit += "<td><input type='submit' name = 'Lbutton' value='login' /><br>\n"
-    bit += "<input type='submit' name = 'Lbutton' value='register' /></td></tr></table>\n"
+    bit += "<table><tr><td>Username:</td><td><input type = 'text' name = 'username'><br></td>\n"
+    bit += "<td><input type='submit' name = 'Lbutton' value='login' /><br></td></tr>\n"
+    bit += "<tr><td>Password:</td><td><input type = 'password' name = 'password'</td>\n"
+    bit += "<td><input type='submit' name = 'Lbutton' value='register' /></td></tr></table>\n"
     bit += "</form></div>\n"
     return(bit)
 
