@@ -189,15 +189,24 @@ def application(environ, start_response):
             #~ pr('No options matched')
 
         title = "<h1>Plan Your Day!</h1>"
-        greeting =  title + display_greeting(in_username)
+        greeting =  display_greeting(in_username)
         go_to_work = display_groove_select()
+        vert_work = display_groove_select(vertical=True)
         add_a_task =  large_form(None)
-        task_data = display_tasks_from_database(new_Menu, task_to_edit, in_add_to_cat)
-        response_body = basic_html + greeting + message + task_data + go_to_work
+        task_data = "<div id=task_list>"
+        task_data += title
+        task_data += display_tasks_from_database(new_Menu, task_to_edit, in_add_to_cat)
+        task_data += "</div>"
+        sidebar = "<div id='sidebar'>"
+        sidebar += greeting
+        sidebar += vert_work
+        sidebar += "<br>"
+        sidebar += "</div>"
+        response_body = basic_html + sidebar + message + task_data
     else:
         response_body = basic_html + display_login(message) + introduction()
     title = "<h1>Go to Work!</h1>"
-    greeting = basic_html + title + display_greeting(in_username)
+    greeting = basic_html  + display_greeting(in_username)
     if(in_gbutton == 'A-Energy'):
         response_body = greeting + work_it(new_Menu, 1)
         pr('hello from A')

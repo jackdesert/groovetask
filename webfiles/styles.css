@@ -382,3 +382,21 @@ td.description
 .body p {margin-top:0px; margin-bottom:0px}
 .footer p {margin-top:0px; margin-bottom:0px}
 
+#task_list{
+    float: left;
+    width: 70%;
+}
+
+#sidebar{
+    float:  right;
+    width: 30%;
+}
+
+.vert_work{float: right;
+    text-align: center;
+}
+
+.horz_work{
+    margin: auto;
+    text-align: center;
+}

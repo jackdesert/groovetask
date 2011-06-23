@@ -116,10 +116,14 @@ def display_time_spent(in_task):
         output += "Take as long as you need."
     return(output)
 
-def display_groove_select(in_cat = None):
-    bit = "<div align='center'><form method='post' >\n"
+def display_groove_select(in_cat = None, vertical=False):
+    if (vertical):
+        bit = "<div class='vert_work'>"
+    else:
+        bit = "<div class='horz_work'>"
+    bit += "<form method='post' >\n"
     if (in_cat == None):
-        bit += "<h2>Go to Work</h2>\n"
+        bit += "<h1>Go to Work</h1>\n"
     else:
         bit += """<br><br>Not feeling up to the assigned task? Perhaps you're
         feeling a different groove that you thought you should. """
@@ -128,9 +132,16 @@ def display_groove_select(in_cat = None):
         setTimeout("document.getElementById('%s').click();",30000);
         // --></script>""" % str(in_cat)
     bit += "<input type='submit' id = '1' name = 'gbutton' value='A-Energy' />\n"
+    if (vertical):
+        bit += "<br>"
     bit += "<input type='submit' id = '2' name = 'gbutton' value='B-Energy' />\n"
+    if (vertical):
+        bit += "<br>"
     bit += "<input type='submit' id = '3' name = 'gbutton' value='R-Ejuvenate' />\n"
-    bit += "<br><input type='submit' name = 'gbutton' value='Plan Your Day' />\n"
+    if (vertical):
+        bit += "<br>"
+    else:
+        bit += "<br><input type='submit' name = 'gbutton' value='Plan Your Day' />\n"
     bit += "</form></div>\n"
     return(bit)
 
