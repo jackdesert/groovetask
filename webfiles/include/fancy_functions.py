@@ -328,8 +328,9 @@ def display_tasks_from_database(a_Menu, in_task_to_edit, in_add_to_cat):
             category_data += add_one_task(add_to_cat)
 
         category_data += '</table>'
-
-        if (cat == 1):
+        if (cat == add_to_cat):
+            category_data += "<br><br><br>"
+        elif (cat == 1):
             category_data += "<form method = 'post'><input type = 'hidden' name = 'add_to_cat' value = '1'>"
             category_data += "<input type = 'submit' name = 'sbutton' value = 'Clean Slate'>"
             category_data += "<input type = 'submit' name = 'add' value = 'Add a Task'></form>"
