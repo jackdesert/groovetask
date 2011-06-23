@@ -198,7 +198,7 @@ def add_one_task(in_category):
                     <input type = 'hidden' name = 'category' value = '%s' />
 
                     Describe the task <br />
-                    <input type="text" name="description" size="57"/><br />
+                    <input type="text" name="description" size="57" autofocus='autofocus' /><br />
                 </td>
                 <!--<td>
                     Priority <br />
