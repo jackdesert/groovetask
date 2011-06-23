@@ -59,7 +59,7 @@ class FixedOffset(tzinfo):
     """Fixed offset in minutes east from UTC."""
 
     def __init__(self, in_utcoffset, name):
-	in_utcoffset = in_utcoffset + 0 # The +1 is for daylight savings time
+	in_utcoffset = in_utcoffset + 1 # The +1 is for daylight savings time
         if(type(in_utcoffset) == type(100)):
             in_utcoffset = bind(in_utcoffset)   # limit values
             self.__offset = timedelta(hours = in_utcoffset)
@@ -79,7 +79,7 @@ class FixedOffset(tzinfo):
     def dst(self, dt):
 	# return ZERO # No daylight savings offset (use in winter)
         return HOUR # One hour of daylight savings (use in summer)
-
+#I'm not sure if this function is used--note the daylight savings thing in __init__
 
 #~
 #~ # A UTC class.
