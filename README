@@ -1,22 +1,22 @@
 GROOVETASK
 ===================
-Groovetask is an electronic day planner that only plans a single day: TODAY.
-It is currently hosted at http://groove.letseatalready.com, but you are
-welcome to host it anywhere else you like, make additions to it, improve it,
-etc.
-
-When I decided to learn Python and Postgres in 2008, I needed a pet project to
-apply them to. I was reading Brian Tracy's book, "Eat That Frog",
-and decided to put his concepts into digital form.
-
-You can read all about how GrooveTask works by reading the splash page
+Plan your day by the groove you're in, not by what the clock tells you!
+Groovetask is an electronic day planner that matches how you're feeling
+RIGHT NOW to one of your daily to-dos that is perfect for that energy
+level. You can read all about how GrooveTask works by reading the splash page
 at http://groove.letseatalready.com. You can also create an account
 and try it for yourself.
+
+WHAT INSPIRED GROOVETASK?
+=========================
+In 2008 I was reading Brian Tracy's book "Eat That Frog", which basically
+a book about how to accomplish the most important pieces on your plate,
+instead of wheedling away time on unimportant nonsense. During that time,
+I was also coming up to speed in Python and PostgreSQL, so to aid my
+own development (and provide a useful tool), I put Brian Tracy's words
+into digital action: GrooveTask.
 
 HOSTING REQUIREMENTS
 =====================
 
-GrooveTask runs on Python 2.4-2.6, mod_wsgi, and PostgreSQL. If you're
-looking for cheap, robust hosting that offers PostgreSQL, try
-http://webfaction.com.
-
+GrooveTask runs on Python 2.4-2.6, apache with mod_wsgi, and PostgreSQL.
