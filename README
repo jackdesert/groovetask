@@ -1,3 +1,22 @@
-README
-This directory is under revision control (subversion)
-This directory houses the ingredients for Jack's GrooveTask.org website.
+GROOVETASK
+===================
+Groovetask is an electronic day planner that only plans a single day: TODAY.
+It is currently hosted at http://groove.letseatalready.com, but you are
+welcome to host it anywhere else you like, make additions to it, improve it,
+etc.
+
+When I decided to learn Python and Postgres in 2008, I needed a pet project to
+apply them to. I was reading Brian Tracy's book, "Eat That Frog",
+and decided to put his concepts into digital form.
+
+You can read all about how GrooveTask works by reading the splash page
+at http://groove.letseatalready.com. You can also create an account
+and try it for yourself.
+
+HOSTING REQUIREMENTS
+=====================
+
+GrooveTask runs on Python 2.4-2.6, mod_wsgi, and PostgreSQL. If you're
+looking for cheap, robust hosting that offers PostgreSQL, try
+http://webfaction.com.
+
